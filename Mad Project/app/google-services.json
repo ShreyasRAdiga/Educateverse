@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "232163088052",
+    "project_id": "educateverse-44967",
+    "storage_bucket": "educateverse-44967.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232163088052:android:a107951869542ac917a9e1",
+        "android_client_info": {
+          "package_name": "com.example.educateverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232163088052-idb52grub9dfau0orceoj2ts39pfoj80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT179avuHbprcMGNDBy4hBU16rylY6ZjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232163088052-idb52grub9dfau0orceoj2ts39pfoj80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

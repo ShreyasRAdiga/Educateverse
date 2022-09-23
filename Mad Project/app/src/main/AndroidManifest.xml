@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.educateverse">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Educateverse">
+        <activity
+            android:name=".Error"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".LogedOut"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".AccountCreated"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".FacultyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRequest"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyGroupChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyChatFacultyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStudentChat"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGroupCreateActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".AdminFinilizeGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFacultyChat"
+            android:exported="false" />
+        <activity
+            android:name=".AddFaculty"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentNewMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".FacChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

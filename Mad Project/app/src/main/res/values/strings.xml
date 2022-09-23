@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Educateverse</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="Branch">
+        <item>COMPUTER SCIENCE AND ENGINEERING</item>
+        <item>ELECTRONICS AND COMMUNICATION ENGINEERING</item>
+        <item>MECHANICAL ENGINEERING</item>
+        <item>CIVIL ENGINEERING</item>
+        <item>ELECTRONICS AND TELECOMMUNICATION ENGINEERING</item>
+        <item>INFORMATION SCIENCE AND ENGINEERING</item>
+        <item>ELECTRICAL ENGINEERING</item>
+        <item>MASTER OF BUSINESS ADMINISTRATION</item>
+        <item>MASTER OF COMPUTER APPLICATION</item>
+    </string-array>
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="section">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="users">
+        <item>STUDENT</item>
+        <item>FACULTY</item>
+        <item>ADMIN</item>
+    </string-array>
+    <string-array name="honorific">
+        <item>MR.</item>
+        <item>MRS.</item>
+        <item>MS.</item>
+        <item>DR.</item>
+    </string-array>
+    <string-array name="Designations">
+        <item>LECTURER</item>
+        <item>ASSISTANT PROFESSOR</item>
+        <item>ASSOCIATE PROFESSOR</item>
+        <item>PROFESSOR</item>
+        <item>HOD</item>
+
+    </string-array>
+    <string-array name="Class"></string-array>
+</resources>

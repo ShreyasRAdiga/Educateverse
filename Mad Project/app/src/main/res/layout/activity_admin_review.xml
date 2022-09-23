@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminReviewActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/background"
+                android:text=" STUDENT REQUEST REVIEW "
+                android:textColor="#100F0F"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="30sp"
+                android:text="Academic Information"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="15sp"
+                android:background="@drawable/tablebg">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="44dp"
+                        android:layout_marginTop="20sp"
+                        android:text="Name :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="100sp"
+                        android:ems="10"
+                        android:textSize="18sp"
+                        android:hint="Name"
+                        android:inputType="textPersonName" />
+
+                </TableRow>
+                <![CDATA[
+
+                    />
+
+                    ]]>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="20sp"
+                        android:text="USN :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/usn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="100sp"
+                        android:ems="10"
+                        android:textSize="18sp"
+                        android:hint="USN"
+                        android:inputType="textPersonName" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="20sp"
+                        android:text="Branch :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/branch"
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="60sp"
+                        android:entries="@array/Branch"
+                        android:textSize="18sp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30sp"
+                        android:text="Semester :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <Spinner
+                        android:id="@+id/year"
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginRight="60sp"
+                        android:textSize="18sp"
+                        android:entries="@array/semester" />
+
+
+                </TableRow>
+                <![CDATA[
+
+                    />
+
+                    ]]>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginBottom="30sp"
+                        android:text="Section :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/section"
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:textSize="18sp"
+                        android:layout_marginRight="60sp"
+                        android:entries="@array/section" />
+
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="30sp"
+                android:text="Contact Information"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/tablebg">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="30sp"
+                        android:text=" Email :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginRight="100sp"
+                        android:ems="10"
+                        android:textSize="18sp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                </TableRow>
+                <![CDATA[
+
+                    />
+
+                    ]]>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="30sp"
+                        android:text="Mobile :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginRight="100sp"
+                        android:ems="10"
+                        android:textSize="18sp"
+                        android:hint="Mobile "
+                        android:inputType="number" />
+
+                </TableRow>
+                <![CDATA[
+
+                    />
+                ]]>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginBottom="30sp"
+                        android:text="Address :"
+                        android:textColor="#151212"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginRight="100sp"
+                        android:backgroundTint="#43A047"
+                        android:ems="10"
+                        android:textSize="18sp"
+                        android:hint="Address"
+                        android:inputType="textPersonName" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="40sp"
+                    android:layout_marginBottom="20sp"
+                    android:backgroundTint="@color/app_red"
+                    android:gravity="right"
+                    app:cornerRadius="5sp"
+                    android:onClick="decline"
+                    android:text="DECLINE" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:backgroundTint="@color/app_green"
+                    app:cornerRadius="5sp"
+                    android:onClick="accept"
+                    android:text="ACCEPT" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

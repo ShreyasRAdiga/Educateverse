@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/image"
+        android:title="Send Image"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/pdf"
+        android:title="Send PDF"
+        app:showAsAction="never"/>
+    </menu>

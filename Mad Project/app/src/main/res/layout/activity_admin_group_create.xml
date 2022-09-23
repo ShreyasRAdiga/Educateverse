@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminGroupCreateActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="5sp"
+                android:text="Select Faculties"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"  />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/tablebg"
+                android:padding="5sp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="5sp">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:text="Select Branch :"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/branchf"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5sp"
+                        android:entries="@array/Branch"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:backgroundTint="@color/Dashboard"
+                    app:cornerRadius="5sp"
+                    android:onClick="searchf"
+                    android:text="Search" />
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvfac"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:padding="5sp"
+                android:background="@drawable/tablebg">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_marginTop="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablebg"
+                android:textSize="2sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10sp"
+                android:text="Select Students"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/tablebg">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp">
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginLeft="32sp"
+                        android:textStyle="bold"
+                        android:text="Branch :" />
+
+                    <Spinner
+                        android:id="@+id/branchs"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/Branch"
+                        android:layout_marginRight="5sp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginLeft="10sp"
+                        android:textStyle="bold"
+                        android:text="Semester :" />
+
+                    <Spinner
+                        android:id="@+id/semesters"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/semester"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginLeft="25sp"
+                        android:text="Section :"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/section"/>
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="10sp"
+                    android:backgroundTint="@color/Dashboard"
+                    app:cornerRadius="5sp"
+                    android:onClick="searchs"
+                    android:text="Search" />
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvstud"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/tablebg"
+                android:layout_marginLeft="5sp"
+                android:padding="5sp"
+                android:layout_marginRight="5sp" />
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_marginTop="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablebg"
+                android:textSize="2sp" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="20sp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/Dashboard"
+                app:cornerRadius="5sp"
+                android:text="Continue"
+                android:onClick="continuenext"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
